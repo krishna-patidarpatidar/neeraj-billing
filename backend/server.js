@@ -1,6 +1,8 @@
 const app = require("./app")
+require("dotenv").config()
 
+const port = process.env.PORT || 3000
 
-app.listen(4000, '0.0.0.0', ()=>{
-    console.log("surver started")
+app.listen(port, '0.0.0.0', ()=>{
+    console.log(`surver started ${port}`)
 })
