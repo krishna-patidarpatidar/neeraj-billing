@@ -9,7 +9,7 @@ import Toast from '../../../Config/Toast';
 const ProductEditWrapper: React.FC = () => {
   const [editProduct] = useEditProductsMutation();
   const { id } = useParams()
-  const { data } = useGetSingleProductsQuery({ id })
+  const { data }:any = useGetSingleProductsQuery({ id })
   const { setEdit } = useOutletContext<{ setEdit: React.Dispatch<React.SetStateAction<boolean>> }>();
 
   console.log(data)

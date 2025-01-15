@@ -11,7 +11,7 @@ const CustomerEditWrapper: React.FC = () => {
     const token = localStorage.getItem("auth")
 
     const {id}= useParams()
-    const {data}=useGetSingleCustomerQuery({token,id})
+    const {data}:any=useGetSingleCustomerQuery({token,id})
     const [editCustomer] = useCustomerEditMutation()
     const { setEdit } = useOutletContext<{ setEdit: React.Dispatch<React.SetStateAction<boolean>> }>();
     return (

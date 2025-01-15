@@ -10,9 +10,12 @@ type Category = {
  
 };
 
+
 type Props = {
   categoryData: Category[]; // Updated prop name and structure
-  deleteCategory: (id: string) => void;
+  deleteCategory: (categoryId: string) => void;
+  isLoading : boolean;
+
 };
 
 const CategoryListForm: React.FC<Props> = ({ categoryData, deleteCategory ,isLoading}:any) => {

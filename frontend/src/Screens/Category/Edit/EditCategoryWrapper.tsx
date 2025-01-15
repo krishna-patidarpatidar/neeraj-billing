@@ -11,7 +11,7 @@ const EditCategoryWrapper: React.FC = () => {
     const navigate = useNavigate()
     const { id } = useParams()
     const [editCategory] = useCategoryEditMutation()
-    const { data } = useGetSingleCategoryQuery({  id })
+    const { data }:any = useGetSingleCategoryQuery({  id })
     const { setEdit } = useOutletContext<{ setEdit: React.Dispatch<React.SetStateAction<boolean>> }>();
     return (
         <div>

@@ -38,7 +38,7 @@ const ProductForm: React.FC<Props> = ({ formikProps }) => {
   const [categories,setCategorys]=useState([])
   const { setEdit } = useOutletContext<{ setEdit: React.Dispatch<React.SetStateAction<boolean>> }>();
   const token = localStorage.getItem('auth') || '';
-  const { data, isLoading } = useGetCategoryQuery({ token });
+  const { data, isLoading }:any = useGetCategoryQuery({ token });
   
   useEffect(()=>{
     setCategorys(data?.data)

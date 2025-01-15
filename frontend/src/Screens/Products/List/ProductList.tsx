@@ -1,24 +1,25 @@
 import React, { useState } from 'react';
 import AtmButtonField from '../../../Components/atoms/Button/AtmButtonField';
 import { Link, Outlet } from 'react-router-dom';
-import { useGetCategoryQuery } from '../../../Service/Category/CategoryApiSlice';
+// import { useGetCategoryQuery } from '../../../Service/Category/CategoryApiSlice';
 
 type Product = {
   _id: string;
   name: string;
   sellingPrice: number;
   productCode: string;
+  categoryId:any
 };
 
 type Props = {
   productData: Product[];
   deleteProduct: (id: string) => void;
-  isLoading: boolean;
+
 };
 
 const ProductList: React.FC<Props> = ({ productData,deleteProduct }) => {
   const [edit, setEdit] = useState(false);
-  const { data, isLoading } = useGetCategoryQuery("")
+  // const { data, isLoading } = useGetCategoryQuery("")
 
   const handleEdit = () => {
     setEdit(true);

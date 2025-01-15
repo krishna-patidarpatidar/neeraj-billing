@@ -3,11 +3,10 @@ import React from 'react';
 import * as Yup from 'yup'; // Optional: if you plan to use validation
 import { useCreateCustomerMutation } from '../../../Service/CustomerApi/CustomerSlice';
 import CustomerForm from '../Layout/CustomerForm';
-import { useNavigate, useOutletContext } from 'react-router-dom';
+import { useOutletContext } from 'react-router-dom';
 import Toast from '../../../Config/Toast';
 
 const CustomerAddWrapper: React.FC = () => {
-    const navigate = useNavigate()
     const [createCustomer] = useCreateCustomerMutation()
     const { setEdit } = useOutletContext<{ setEdit: React.Dispatch<React.SetStateAction<boolean>> }>();
 

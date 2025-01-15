@@ -12,7 +12,7 @@ import Auth from "../Components/Molecule/Auth/Auth";
 import InvoiceListWrapper from "../Screens/Invoice/List/InvoiceListWrapper";
 import AddInvoiceWrapper from "../Screens/Invoice/Add/AddInvoiceWrapper";
 import ShowInviceWrapper from "../Screens/Invoice/Invoice/ShowInvoiceWrapper";
-import EditInvoiceWrapper from "../Screens/Invoice/Edit/EditInvoiceWrapper";
+// import EditInvoiceWrapper from "../Screens/Invoice/Edit/EditInvoiceWrapper";
 import CategoryListFormWrapper from "../Screens/Category/List/CategoryListFormWrapper";
 import EditCategoryWrapper from "../Screens/Category/Edit/EditCategoryWrapper";
 import AddCategoryWrapper from "../Screens/Category/Add/AddCategoryWrapper";
@@ -102,10 +102,10 @@ const pageRoute = createBrowserRouter([
         path: "invoice",
         element: <InvoiceListWrapper />,
       },
-      {
-        path: "invoice/edit-invoice/:id",
-        element: <EditInvoiceWrapper />,
-      },
+      // {
+      //   path: "invoice/edit-invoice/:id",
+      //   element: <EditInvoiceWrapper />,
+      // },
       {
         path: "invoice/show-invoice/:billId",
         element: <ShowInviceWrapper />,

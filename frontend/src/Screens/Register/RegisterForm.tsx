@@ -1,4 +1,3 @@
-import React from 'react';
 import AtmTextField from '../../Components/atoms/Input/AtmTypeText/AtmTextField';
 import AtmPasswordField from '../../Components/atoms/Input/AtmTypePassword/AtmPasswordField';
 import AtmButtonField from '../../Components/atoms/Button/AtmButtonField';

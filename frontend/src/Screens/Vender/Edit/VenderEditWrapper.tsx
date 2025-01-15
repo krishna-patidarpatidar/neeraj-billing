@@ -11,7 +11,7 @@ const VenderEditWrapper: React.FC = () => {
     const token = localStorage.getItem("auth")
 
     const {id}= useParams()
-    const {data}=useGetSingleVenderQuery({token,id})
+    const {data}:any =useGetSingleVenderQuery({token,id})
     const [editVender] = useVenderEditMutation()
     const { setEdit } = useOutletContext<{ setEdit: React.Dispatch<React.SetStateAction<boolean>> }>();
     return (

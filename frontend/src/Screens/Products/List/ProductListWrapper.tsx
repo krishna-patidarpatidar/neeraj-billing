@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 type Props = {};
 
 const ProductListWrapper: React.FC<Props> = () => {
-  const { data, isError, isLoading }: any = useGetProductsQuery();
+  const { data, isError, isLoading }: any = useGetProductsQuery("");
   const [deleteProductById] = useDeleteProductsMutation()
   // Handle loading state
   if (isLoading) {

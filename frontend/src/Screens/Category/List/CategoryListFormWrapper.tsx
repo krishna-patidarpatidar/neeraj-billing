@@ -4,6 +4,7 @@ import Hourglass from '../../../Components/Molecule/Skeleton/TableSkeleton';
 import CategoryListForm from './CategoryListForm';
 import { useCategoryDeleteMutation, useGetCategoryQuery } from '../../../Service/Category/CategoryApiSlice';
 
+
 const CategoryListFormWrapper: React.FC = () => {
 
   const { data, isError, isLoading }: any = useGetCategoryQuery('');

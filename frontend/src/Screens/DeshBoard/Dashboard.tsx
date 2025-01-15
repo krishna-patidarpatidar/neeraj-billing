@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 
-const Dashboard = ({ timeBillRange, timeTransactionRange, transactionData, customerCount,venderCount, onTimeRangeBillChange,onTimeRangeTransactionChange,billCoutntData }:any) => {
+const Dashboard = ({ timeBillRange, timeTransactionRange, transactionData, customerCount, onTimeRangeBillChange,onTimeRangeTransactionChange,billCoutntData }:any) => {
 
   // Handle dynamic data - transactions and customer count
   const totalSales = transactionData ?.data  ?? 0;  // Ensure dynamic total amount
   const totalCustomers = customerCount ?.data ?.count ?? 0;  // Ensure dynamic customer count
-  const totalVender = venderCount ?.data ?.count ?? 0;  // Ensure dynamic customer count
+  // const totalVender = venderCount ?.data ?.count ?? 0;  // Ensure dynamic customer count
 const totalBills=billCoutntData?.data ?? 0
   return (
     <div className="grid grid-cols-1 gap-4 mt-40 p-4 md:grid-cols-2 items-start mx-auto lg:grid-cols-4">
